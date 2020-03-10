@@ -34,8 +34,8 @@ function validInput(){
     document.getElementById("invalidInput").innerHTML = output;
   } else {
     var range = getRange(start, end, step)
-    document.getElementById("range").innerHTML = range;
-    document.getElementById("sum").innerHTML = getSum(range);
-    document.getElementById("binary").innerHTML = getBinary(range);
+    document.getElementById("range").innerHTML = "The generated array is: " + range;
+    document.getElementById("sum").innerHTML = "The sum is: " + getSum(range);
+    document.getElementById("binary").innerHTML = "The binary of absolute elements are:" + getBinary(range);
   }
 }
